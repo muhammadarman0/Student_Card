@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form>
+            <div id="parent">
+                <h2>Signup Form</h2>
+
+                <input type="text" id="name" placeholder="Student Name">
+                <input type="text" id="fname" placeholder="Fathe Name">
+                <input type="email" id="email" placeholder="Email">
+                <!-- <input type="email" id="rollNum" placeholder="Roll Number"> -->
+                <input type="text" id="course" placeholder="Course">
+
+                <button onclick="generateCard(event)">Generate Student Card</button>
+            </div>
+            <!-- Card will appear here -->
+            <div id="cardContainer"></div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
