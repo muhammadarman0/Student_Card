@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Student Card App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container_form">
+        <div class="studetnForm" id="parent">
+            <h2>Student ID form</h2>
+            <form onsubmit="cardGenerater(event)" class="parent">
+                <p>Name</p>
+                <input type="text" id="name" placeholder="Enter Name">
+                <p>Father name</p>
+                <input type="text" id="fname" placeholder="Enter Father name">
+                <p>NIC/C</p>
+                <input type="text" id="nic/c" placeholder="Enter NIC/C">
+                <p>Phone number</p>
+                <input type="number" id="num" placeholder="Enter Number">
+                <p>Course</p>
+                <input type="text" id="opt" placeholder="Enter Number">
+
+                <button>Generate Student Card</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="cont"></div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
