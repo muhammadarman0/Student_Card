@@ -34,13 +34,14 @@ function generateCard(e) {
         courses: cou,
     }
 
-    let card = `<div class="student-card">
+    let card = `<div class="student-card" id="container">
     <h3>Student Card</h3>
     <p><b>Student Name:</b> ${objCard.name}</p>
     <p><b>Father Name:</b> ${objCard.FatherName}</p>
     <p><b>Email:</b> ${objCard.emailUser}</p>
     <p><b>Roll Number:</b> 31212</p>
     <p><b>Course:</b> ${objCard.courses}</p>
+    <button id="otherCard">Generate Another</button>
     </div>`
 
     document.getElementById("cardContainer").innerHTML = card;
@@ -49,3 +50,21 @@ function generateCard(e) {
     console.log(objCard);
 
 }
+
+function otherStudentCard() {
+    let stdname = document.getElementById("name").value;
+    let fname = document.getElementById("fname").value
+    let email = document.getElementById("email").value;
+    // let roll = document.getElementById("rollNum").value
+    let cou = document.getElementById("course").value;
+
+    document.getElementById("container").style = "display:none;"
+
+    document.getElementById("parent").style = "display:block"
+
+
+}
+
+otherCard.addEventListener("click", otherStudentCard)
+
+let otherCard = document.getElementById("otherCard")
