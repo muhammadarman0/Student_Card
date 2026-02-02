@@ -96,7 +96,7 @@ body {
     margin-top: 10px;
 }
 
-.submit-button>button{
+.submit-button>button {
     margin-top: 15px;
     /* padding: 12px; */
     height: 40px;
@@ -109,4 +109,61 @@ body {
     cursor: pointer;
     margin-bottom: 15px;
     font-weight: 600;
+}
+
+
+/* ID CARD */
+
+
+.student-details {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 400px;
+    height: 420px;
+    border-radius: 15px;
+    box-shadow: rgba(68, 62, 62, 0.35) 0px 5px 15px;
+    background-color: #020617;
+    padding: 5px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.institute {
+    color: #38BDF8;
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+.past {
+    display: flex;
+    padding: 10px;
+}
+
+.user-img>img {
+    margin: 0 auto;
+    display: block;
+    border: 3px solid blue;
+    border-radius: 50%;
+}
+
+.name-student {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    gap: 10px;
+}
+
+.roll-number {
+    color: rgb(204, 202, 202);
+    font-size: 16px;
+    align-items: center;
+}
+.value-user{
+    text-align: right;
+    margin-left: 130px;
+}
+
+.hidden{
+    display: none;
 }
