@@ -10,9 +10,9 @@
 
 <body>
 
-    <div class="third-card">
+    <div class="third-card" id="card">
         <div class="value">
-            <form class="former">
+            <form class="former" onsubmit="formData(event)">
                 <h1 class="head">Student Card</h1>
                 <div class="name">
                     <!-- <p>First Name:</p> -->
@@ -34,6 +34,10 @@
                     <!-- <p>Upload Image:</p> -->
                     <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
                 </div>
+                     <div class="roll-number">
+                    <!-- <p>Course:</p> -->
+                    <input type="text" id="rollNumber" name="rollNumber" placeholder="Enter Roll Number">
+                </div>
                 <div class="course">
                     <!-- <p>Course:</p> -->
                     <input type="text" id="course" name="course" placeholder="Enter Course">
@@ -44,7 +48,7 @@
             </form>
         </div>
     </div>
-    <div class="id-card hidden">
+    <div class="id-card hidden" id="main-of-card">
         <div class="student-details">
             <h2 class="institute">
                 SMIT Karachi
@@ -53,22 +57,26 @@
                 <img width="92px" height="92px" src="img/DSC06482.jpg" alt="">
             </div>
             <div class="name-student">
-                <p class="student-first-name">First Name</p>
-                <p class="student-last-name">Last Name</p>
+                <p class="student-first-name" id="first"></p>
+                <p class="student-last-name" id="last"></p>
             </div>
             <div class="past">
                 <div class="detail-number">
                     <p class="student-email">Email:</p>
-                    <p class="student-Num">Phone Number:</p>
+                    <p class="student-Num">Phone Num:</p>
                     <p class="roll-Num">Roll Number:</p>
                     <p class="course-Num">course:</p>
                 </div>
                 <div class="value-user">
-                    <p class="student-email-value">armadev@mail.com</p>
-                    <p class="student-Num-value">03101165278</p>
-                    <p class="roll-Num-value">102030</p>
-                    <p class="course-Num-value">Smit</p>
+                    <p class="student-email-value" id="emailName"></p>
+                    <p class="student-Num-value" id="num"></p>
+                    <p class="roll-Num-value" id="roll"></p>
+                    <p class="course-Num-value" id="skill"></p>
                 </div>
+
+            </div>
+            <div class="btn">
+                <button onclick="anotherCard()">Another Card</button>
             </div>
         </div>
     </div>
