@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #090F21;
+    background-size: cover;
+}
+
+.head {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.value {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* border: 1px solid white; */
+    border-radius: 14px;
+    box-shadow: rgba(68, 62, 62, 0.35) 0px 5px 15px;
+    width: 400px;
+    background-color: #020617;
+    padding: 10px;
+}
+
+.name>input {
+    margin-top: 10px;
+    padding: 12px;
+    height: 20px;
+    width: 100%;
+    background: none;
+    color: #94A394;
+    border: 1px solid #94A394;
+    border-radius: 13px;
+}
+
+.last-name>input {
+    margin-top: 10px;
+    padding: 12px;
+    height: 20px;
+    width: 100%;
+    background: none;
+    color: #94A394;
+    border: 1px solid #94A394;
+    border-radius: 13px;
+}
+
+.email>input {
+    margin-top: 10px;
+    padding: 12px;
+    height: 20px;
+    width: 100%;
+    background: none;
+    color: #94A394;
+    border: 1px solid #94A394;
+    border-radius: 13px;
+}
+
+.phone-number>input {
+    margin-top: 10px;
+    padding: 12px;
+    height: 20px;
+    width: 100%;
+    background: none;
+    color: #94A394;
+    border: 1px solid #94A394;
+    border-radius: 13px;
+    margin-top: 10px;
+}
+
+.file-input>input {
+    margin-top: 10px;
+    padding: 12px;
+    height: 20px;
+    width: 100%;
+    background: none;
+    color: #94A394;
+    border: 1px solid #94A394;
+    border-radius: 13px;
+    margin-top: 10px;
+}
+
+.course>input {
+    margin-top: 10px;
+    padding: 12px;
+    height: 20px;
+    width: 100%;
+    background: none;
+    color: #94A394;
+    border: 1px solid #94A394;
+    border-radius: 13px;
+    margin-top: 10px;
+}
+
+.submit-button>button{
+    margin-top: 15px;
+    /* padding: 12px; */
+    height: 40px;
+    width: 100%;
+    background-color: #17AAEC;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
