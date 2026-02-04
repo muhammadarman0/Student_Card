@@ -3,8 +3,9 @@ let lastName = document.getElementById("lastName");
 let emailUser = document.getElementById("email")
 let phoneUser = document.getElementById("phoneNumber");
 let idNum = document.getElementById("rollNumber")
-let img = document.getElementById("imageUpload")[0];
+let imgUpload = document.getElementById("imageUpload");
 let course = document.getElementById("course")
+let imageUpload = document.getElementById("proPic")
 
 function formData(e) {
     e.preventDefault();
@@ -24,7 +25,7 @@ function formData(e) {
         phone: phoneUser.value,
         id: idNum.value,
         cou: course.value,
-        // img: img.value
+        img: URL.createObjectURL(imgUpload.files[0])
         // img: URL.createObjectURL(document.getElementById("imageUpload").files[0])
     }
     if (obj.img === "undefined") {
@@ -36,9 +37,16 @@ function formData(e) {
     document.getElementById("roll").innerHTML = obj.id;
     document.getElementById("num").innerHTML = obj.phone;
     document.getElementById("skill").innerHTML = obj.cou;
-    // document.getElementById("imageShow").src = obj.img;
+    document.getElementById("proPic").src = obj.img;
     container.style.display = "block";
     document.getElementById("card").style.display = "none"
+    firstName.value = "";
+    lastName.value = "";
+    emailUser.value = "";
+    phoneUser.value = "";
+    idNum.value = "";
+    course.value = "";
+    imageUpload.src = "";
 }
 
 function anotherCard() {
